@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Manager</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/page/all.css">
+	<link rel="stylesheet" type="text/css" href="css/page/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/page/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/page/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="css/page/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/page/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="css/page/jquery.rateyo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/inner-page-style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+	<link rel="icon" type="images/png" href="images/icon.png"/>
+</head>
+<body>
+	<div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
+		<header class="site-header">
+			<div class="top-header">
+				<div class="container">
+					<div class="top-header-left">
+						<div class="top-header-block">
+							<a href="mailto:damacriscia@gmail.com" itemprop="email"><i class="fas fa-user"></i>cjdama</a>
+						</div>
+						<div class="top-header-block">
+							<a href="tel:+9779813639131" itemprop="telephone"><i class="fas fa-phone"></i> +977 9813639131</a>
+						</div>
+					</div>
+					<div class="top-header-right">
+						<div class="social-block">
+							<ul class="social-list">
+								<li><a href=""><i class="fab fa-viber"></i></a></li>
+								<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+								<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+								<li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter"></i></a></li>
+								<li><a href=""><i class="fab fa-skype"></i></a></li>
+							</ul>
+						</div>
+						<div class="login-block">
+							<a href="">Logout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Top header Close -->
+			<div class="main-header">
+				<div class="container">
+					<div class="logo-wrap" itemprop="logo">
+						<img src="images/site-logo.jpg" alt="Logo Image">
+						<!-- <h1>Education</h1> -->
+					</div>
+					<div class="nav-wrap">
+						<nav class="nav-desktop">
+							<ul class="menu-list">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a class="button" href="#view-password">View</a></li>
+								<li><a class="button" href="#add-password">Add</a></li>
+							</ul>
+						</nav>
+						<div id="bar">
+							<i class="fas fa-bars"></i>
+						</div>
+						<div id="close">
+							<i class="fas fa-times"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Close -->
+		
+		<div class="page-heading">
+			<div class="container">
+				<h2>Password Manager</h2>
+			</div>
+		</div>
+
+		<!-- add-password -->
+		<div id="add-password" class="overlay">
+			<div class="popup">
+				<h2>Add Password</h2>
+			<a class="close" href="#">&times;</a> 
+			
+			<div class="row">
+			  <div class="col-25">
+				<label for="url">URL</label>
+			  </div>
+			  <div class="col-75">
+				<input type="text" id="url" name="url" placeholder="Your url..">
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-25">
+				<label for="email">Email</label>
+			  </div>
+			  <div class="col-75">
+				<input type="email" id="email" name="email" placeholder="Your email..">
+			  </div>
+			</div>
+			
+			<div class="row">
+			  <div class="col-25">
+				<label for="password">Password</label>
+			  </div>
+			  <div class="col-75">
+				<input type="password" id="password" name="password" placeholder="Your password..">
+			  </div>
+			</div>
+		 
+			<div class="row">
+			  <input type="submit" value="save">
+			</div>
+		
+			
+			</div>
+		</div>
+
+
+		<!-- view-credentials -->
+		<div id="view-password" class="overlay">
+			<div class="popup2">
+				<h2>View</h2>
+			<a class="close" href="#">&times;</a> 
+				<div class="row">
+					<img src="https://cdn.pixabay.com/photo/2016/04/13/14/27/google-chrome-1326908_1280.png" alt="" class="center">
+				</div>
+				<div class="row">
+					<div class="col-20">
+						<label for="email">Email</label>
+					</div>
+					<div class="col-80">
+						<input type="email" id="copy" name="email" placeholder="Your email..">
+						<i class="field-icon fas fa-copy copy fa-2x" title="copy to clipboard"></i>
+						<!-- <button onclick="myFunction()">Copy text</button> -->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-20">
+						<label for="password">Password</label>
+					</div>
+					<div class="col-80">
+						<input type="password" id="password" name="username" placeholder="Your password..">
+						<i class="field-icon fas fa-copy copy fa-2x" title="copy to clipboard"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Popular courses End -->
+		<div class="learn-courses">
+			<div class="container">
+				<div class="courses">
+					<div class="limiter">
+						<div class="container-table100">
+							<div class="wrap-table100">
+								<div class="table100">
+									<table>
+										<thead>
+											<tr class="table100-head">
+												<th class="column1">Date</th>
+												<th class="column2">URL</th>
+												<th class="column3">Email</th>
+												<th class="column4">Username</th>
+												<th class="column5">Password</th>
+												<th class="column6">Actions</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												<tr>
+													<td class="column1">2022-02-28 01:22</td>
+													<td class="column2">Youtube</td>
+													<td class="column3">damacriscia@gmail.com</td>
+													<td class="column4">cjdama</td>
+													<td class="column5">12345</td>
+													<td class="column5">edit</td>
+												</tr>
+												
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Query Section -->
+		<section class="what-other-say">
+		<section class="query-section">
+			<div class="container">
+				<p>Any Queries? Ask us a question at<a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></p>
+			</div>
+		</section>
+		<!-- End of Query Section -->
+
+		<footer class="page-footer" itemprop="footer" itemscope itemtype="http://schema.org/WPFooter">
+		
+			<div class="footer-second-section">
+				<div class="container">
+					<hr class="footer-line">
+					<ul class="social-list">
+						<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href=""><i class="fab fa-twitter"></i></a></li>
+						<li><a href=""><i class="fab fa-youtube"></i></a></li>
+						<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					</ul>
+					<hr class="footer-line">
+				</div>
+			</div>
+			<div class="footer-last-section">
+				<div class="container">
+					<p>Copyright 2022 &copy; passwordmanager.com</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script type="text/javascript" src="js/page/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/page/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/page/custom.js"></script>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js" defer></script>
+</body>
+</html>x
